@@ -1,4 +1,4 @@
-# READ FILE DEMO by MR. V
+# FILE I/O DEMO by MR. V
 
 # Read Entire Contents of File as a Single String
 # open(path_to_file, mode)
@@ -27,3 +27,10 @@ for line in file:
 file.close()
 
 print(lines)
+
+# Write String Data to File
+# File will be created if it doesn't exist
+my_data = "Hello Files!\nThis is a new line."
+file = open("data2.txt", "w")
+file.write(my_data)
+file.close()
